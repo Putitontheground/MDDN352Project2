@@ -1,6 +1,5 @@
 ## simple-ar.js
 
-![Alt text](assets/ar.gif)
 
 ### Markers
 ![Alt text](https://drive.google.com/uc?export=view&id=0B3XkfYbZArSfeERwQWRNMGR1WDQ)
