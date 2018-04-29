@@ -11,10 +11,10 @@
   <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' >
 
     <a-marker type='pattern' url='patterns/pattern-marker.patt' id="Keukentafel">
-		 <a-box position="-0.3 0.1 0"  width="0.2" height="0.05" rotation="0 0 0" color="#F03F35"></a-box>
-		 <a-box position="0 0.1 0"  width="0.2" height="0.1" rotation="0 0 0" color="#F5FAFA"></a-box>
-	     <a-box position="0.3 0.1 0"  width="0.2" height="0.1" rotation="0 0 0" color="#F8EAC9"></a-box>
-	     <a-box position="0.6 0.1 0" width="0.2" height="0.1" rotation="0 0 0" color="#E7CB71"></a-box>  
+		 <a-box position="-0.3 0.1 0" id="myBtn" width="0.2" height="0.05" rotation="0 0 0" color="#F03F35"></a-box>
+		 <a-box position="0 0.1 0" id="myBtn" width="0.2" height="0.1" rotation="0 0 0" color="#F5FAFA"></a-box>
+	     <a-box position="0.3 0.1 0" id="myBtn" width="0.2" height="0.1" rotation="0 0 0" color="#F8EAC9"></a-box>
+	     <a-box position="0.6 0.1 0" id="myBtn" width="0.2" height="0.1" rotation="0 0 0" color="#E7CB71"></a-box>  
     </a-marker>
 
 
@@ -26,7 +26,6 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
 		<!-- Trigger/Open The Modal -->
-		<button id="myBtn">Open Modal</button>
 
 		<!-- The Modal -->
 		<div id="myModal" class="modal">
