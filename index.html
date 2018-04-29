@@ -18,10 +18,11 @@
 
 
     <a-assets>
-    <a-asset-item id="log" src="assets/scene.gltf"></a-asset-item>
+    <a-asset-item id="log" src="assets/log.obj"></a-asset-item>
+    <a-asset-item id="log" src="assets/log.mtl"></a-asset-item>
   	</a-assets>
 
-  	<a-entity gltf-model="#log"></a-entity>
+  	<a-entity obj-model="obj: #log-obj; mtl: #log-mtl"></a-entity>
 
     <!-- define a simple camera -->
     <a-entity camera></a-entity>
