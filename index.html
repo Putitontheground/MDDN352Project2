@@ -2,6 +2,7 @@
 <html>
 	<script src="https://aframe.io/releases/0.6.1/aframe.js"></script>
 	<script src="js/aframe-ar.js"></script>
+	<script scr="js/index.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://unpkg.com/aframe-text-component/dist/aframe-text-component.min.js"></script>
 	<body style='margin : 0px; overflow: hidden;'>
@@ -24,9 +25,25 @@
   	</a-scene>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-<div>
-	<p>info</p>
-</div>
+		<!-- Trigger/Open The Modal -->
+		<button id="myBtn">Open Modal</button>
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <div class="modal-header">
+		      <span class="close">&times;</span>
+		      <h2>Modal Header</h2>
+		    </div>
+		    <div class="modal-body">
+		      <p>Some text in the Modal Body</p>
+		      <p>Some other text...</p>
+		    </div>
+		  </div>
+
+		</div>
 
 	</body>
 </html>
