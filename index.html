@@ -6,7 +6,6 @@
     <script src="js/aframe-ar.js"></script>
     <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-text-component/dist/aframe-text-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js"></script>
   </head>
   <body style='margin : 0px; overflow: hidden;'>
     <!-- Try changing the preset to one of default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, 
@@ -15,6 +14,8 @@
 
 
 	<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+
+		
 	    <a-marker type='pattern' url='patterns/pattern-marker.patt' id="Keukentafel">
 	      <a-assets>
 	        <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
@@ -28,7 +29,9 @@
 	      </a-box>
 
 	      <a-text value="Hello, A-Frame!" color="#FAFAFA" position="-0.9 0.2 -3" scale="1.5 1.5 1.5"></a-text>
-	      
+	      </a-marker>
+
+
 	      <a-entity-camera>
 	        <a-cursor color="#FAFAFA"></a-cursor>
 	      </a-entity-camera>
