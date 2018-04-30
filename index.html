@@ -1,53 +1,38 @@
 <!DOCTYPE html>
 <html>
+<head>
 	<script src="https://aframe.io/releases/0.8.0/aframe.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/aframe-ar.js"></script>
 	<script scr="js/index.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://unpkg.com/aframe-text-component/dist/aframe-text-component.min.js"></script>
-	<body style='margin : 0px; overflow: hidden;'>
+</head>
 
 
-  <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' >
+<body style='margin : 0px; overflow: hidden;'>
+
+
+<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' >
+
+
+
+
 	<a-marker type='pattern' url='https://rawgit.com/Putitontheground/MDDN352Project2/master/assets/pattern-marker.patt'>
-		<a-box position="-0.3 0.1 0" width="0.2" height="0.05" rotation="0 0 0" color="#F03F35"></a-box>
-		<a-box position="0 0.1 0" width="0.2" height="0.1" rotation="0 0 0" color="#F5FAFA"></a-box>
-	    <a-box position="0.3 0.1 0" width="0.2" height="0.1" rotation="0 0 0" color="#F8EAC9"></a-box>
-	    <a-box position="0.6 0.1 0" width="0.2" height="0.1" rotation="0 0 0" color="#E7CB71"></a-box>  
 		<a-entity gltf-model="#log" scale=".01 .01 .01"></a-entity>
-
-
     </a-marker>
 
 
     <a-assets>
     <a-asset-item id="log" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/9d9a63e9/assets/scene.gltf" ></a-asset-item>
-  	</a-assets>
+ 	</a-assets>
 
-  
-
-    <!-- define a simple camera -->
     <a-entity camera></a-entity>
-  </a-scene>
 
+</a-scene>
+	<button onclick="document.getElementById('btn').style.display='block'" class="btn">Info</button>
 
-		
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-		<!-- Trigger/Open The Modal 
-
-			<div id="myModal" class="modal">
-
-			  <div class="modal-content">
-			    <div class="modal-header">
-			      <span class="close">&times;</span>
-			      <h2>Modal Header</h2>
-			    </div>
-			    <div class="modal-body">
-			      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum, nulla finibus vulputate gravida, est orci malesuada leo, nec luctus sapien est non ligula. Suspendisse commodo ullamcorper massa et luctus. Phasellus suscipit aliquet arcu, vel congue nibh accumsan ac. Quisque rhoncus lorem ac tellus consequat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras efficitur laoreet velit commodo molestie. Vivamus ex urna, ultricies sit amet suscipit ut, blandit vel mi. </p>
-			    </div>
-			  </div>
-			</div> -->
-
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	</body>
+</body>
 </html>
