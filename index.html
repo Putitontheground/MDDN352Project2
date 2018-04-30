@@ -2,11 +2,11 @@
 <html>
 <head>
 	<script src="https://aframe.io/releases/0.8.0/aframe.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/aframe-ar.js"></script>
 	<script scr="js/index.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://unpkg.com/aframe-text-component/dist/aframe-text-component.min.js"></script>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 </head>
 
 
@@ -14,9 +14,6 @@
 
 
 <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' >
-
-
-
 
 	<a-marker type='pattern' url='https://rawgit.com/Putitontheground/MDDN352Project2/master/assets/pattern-marker.patt'>
 		<a-entity gltf-model="#log" scale=".01 .01 .01"></a-entity>
@@ -30,9 +27,22 @@
     <a-entity camera></a-entity>
 
 </a-scene>
-	<button onclick="document.getElementById('btn').style.display='block'" class="btn">Info</button>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<a href="#openModal">Info</a>
+
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>How much wood is in there?</h2>
+		<p>quite a bit</p>
+		<p>Maybe even like 2.4 meters</p>
+	</div>
+</div>
+	
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
 </body>
 </html>
