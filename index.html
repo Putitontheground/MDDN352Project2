@@ -3,8 +3,9 @@
 	<script src="https://aframe.io/releases/0.8.0/aframe.js"></script>
 	<script src="js/aframe-ar.js"></script>
 	<script scr="js/index.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 	<script src="https://unpkg.com/aframe-text-component/dist/aframe-text-component.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<body style='margin : 0px; overflow: hidden;'>
 
 
@@ -21,13 +22,13 @@
 		<a-asset-item id="log-obj" src="https://rawgit.com/Putitontheground/MDDN352Project2/master/assets/log.obj"></a-asset-item>
 		<a-asset-item id="log-mtl" src="https://rawgit.com/Putitontheground/MDDN352Project2/master/assets/log.mtl"></a-asset-item>
 		</a-assets>
-
+<a-entity obj-model="obj: #log-obj; mtl: #log-mtl" position="1 2 3" scale=".5 .5 .5" rotation="45 90 180"></a-entity>
 
     </a-marker>
 
 
 
-		<a-entity obj-model="obj: #log-obj; mtl: #log-mtl" position="1 2 3" scale=".5 .5 .5" rotation="45 90 180"></a-entity>
+		
 
 
   	
