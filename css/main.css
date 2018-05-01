@@ -17,17 +17,22 @@ body {
     width: 200px;
     height: 30px;
     bottom: 0px;;
-    padding-top: 6px;
-    font-size: 15px;
+    
+    
 
     color: white;
-    background-color: rgba(187,101,247,.3);
+    background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
     border:none;
     text-decoration: none;
     -webkit-border-radius: 12px;
     border: 1px solid rgba(255,255,255,.1);
 
+}
+
+#myBtn {
+    font-size: 20px;
+    padding-top: 3px;
 }
 
 
@@ -39,7 +44,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.4);
     z-index: 99999;
     opacity:0;
     -webkit-transition: opacity 600ms ease-in;
@@ -64,7 +69,7 @@ body {
     border-radius: 10px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    background: rgba(255,255,255,.7);
+    background: rgba(255,255,255,.8);
 }
 
 
@@ -76,6 +81,8 @@ body {
     bottom: -15px;
     width: 100%;
     border-radius: 20px;
+    font-size: 15px;
+    padding-top: 5px;
 }
 
 .close:hover { 
