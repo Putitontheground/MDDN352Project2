@@ -57,10 +57,13 @@ body {
     width: 80%;
     max-height: 90%;
     top: 20px;
+    bottom: 20px;
     position: relative;
     margin: auto;
     padding: 5px 20px 20px 20px;
     border-radius: 10px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     background: rgba(255,255,255,.7);
 }
 
@@ -72,9 +75,7 @@ body {
     text-align: center;
     bottom: -15px;
     width: 100%;
-    -webkit-border-bottom-right-radius:12px;
-    -webkit-border-bottom-left-radius:12px;
-    border-radius: 12px;
+    border-radius: 20px;
 }
 
 .close:hover { 
