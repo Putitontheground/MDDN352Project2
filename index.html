@@ -6,6 +6,7 @@
 	<script scr="js/index.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://unpkg.com/aframe-text-component/dist/aframe-text-component.min.js"></script>
+	<script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.0/dist/aframe-extras.min.js"></script>
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 </head>
 
@@ -15,13 +16,15 @@
 
 <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' >
 
+<!-- model retrieved from https://sketchfab.com/models/de1f1066056e478ca7bfc2223a34c6b2# -->
+
 	<a-marker type='pattern' url='https://rawgit.com/Putitontheground/MDDN352Project2/master/assets/pattern-marker.patt'>
 		<a-entity gltf-model="#log" scale=".01 .01 .01"></a-entity>
     </a-marker>
 
 
     <a-assets>
-    <a-asset-item id="log" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/9d9a63e9/assets/scene.gltf" ></a-asset-item>
+    <a-asset-item id="log" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/562d18df/assets/forest_stump/scene.gltf" ></a-asset-item>
  	</a-assets>
 
     <a-entity camera></a-entity>
