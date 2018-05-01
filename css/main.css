@@ -2,33 +2,35 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#myBtn , a {
+#myBtn , #closebtn {
     position: absolute;
     z-index: 9999;
     display: inline-block;
     box-sizing: border-box;
     -webkit-writing-mode: horizontal-tb;
 
-    margin-left: 5px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 5px;
     left: 0px;
     right: 0px;
-    width: 112px;
+    width: 150px;
     height: 30px;
-    bottom: 0px;
-    padding-left: 1px;
-    padding-right: 1px;
-    padding-bottom: 1px;
-    padding-top: 1px;
+    bottom: 0px;;
+    padding-top: 6px;
     font-size: 15px;
 
     color: white;
-    background-color: rgba(187,101,247,.2);
+    background-color: rgba(187,101,247,.3);
     text-align: center;
     border:none;
     text-decoration: none;
+    -webkit-border-radius: 12px;
+    border: 1px solid rgba(255,255,255,.1);
 
 }
+
+
 
 .modalDialog {
     position: fixed;
@@ -40,9 +42,9 @@ body {
     background: rgba(0,0,0,0.8);
     z-index: 99999;
     opacity:0;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
+    -webkit-transition: opacity 1000ms ease-in;
+    -moz-transition: opacity 1000ms ease-in;
+    transition: opacity 1000ms ease-in;
     pointer-events: none;
 }
 
@@ -54,28 +56,35 @@ body {
 .modalDialog > div {
     width: 80%;
     position: relative;
-    margin: 60% auto;
+    margin: 30% auto;
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
-    background: #fff;
+    background: rgba(255,255,255,.7);
 }
 
 
-.close {
-    background: #606061;
+.close , #closebtn {
+    background: rgba(150,150,150,1);
     color: #FFFFFF;
-    line-height: 25px;
     position: absolute;
-    right: -12px;
     text-align: center;
-    top: -10px;
-    width: 24px;
-    text-decoration: none;
-    font-weight: bold;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
+    bottom: -15px;
+    width: 100%;
+    -webkit-border-bottom-right-radius:12px;
+    -webkit-border-bottom-left-radius:12px;
     border-radius: 12px;
-    box-shadow: 1px 1px 3px #000;
 }
 
-.close:hover { background: rgba(187,101,247); }
+.close:hover { 
+    background: rgba(187,101,247); 
+}
+
+.a-enter-vr-button {
+    -webkit-border-radius: 12px;
+}
+
+#infolinks {
+    color: #000000;
+}
+
+
