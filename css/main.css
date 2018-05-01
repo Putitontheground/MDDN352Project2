@@ -55,7 +55,7 @@ body {
 
 .modalDialog > div {
     width: 80%;
-    max-height: 90%;
+    max-height: 70%;
     top: 20px;
     position: relative;
     margin: auto;
