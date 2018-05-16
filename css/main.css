@@ -90,6 +90,7 @@ body {
 }
 
 .a-enter-vr-button {
+    display: none;
     -webkit-border-radius: 12px;
     margin-bottom: 10px;
 }
