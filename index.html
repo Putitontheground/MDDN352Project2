@@ -23,15 +23,16 @@
     </a-marker>
 
     <a-marker type='pattern' url='https://cdn.rawgit.com/Putitontheground/MDDN352Project2/7cf70a8f/patterns/block-marker.patt'>
-		<a-box position="-0.15 0.1 0" width="0.2" height="0.1" rotation="0 0 0" color="#E8E7E3"></a-box>
-		<a-box position="0.15 0.1 0" width="0.2" height="0.1" rotation="0 0 0" color="#0DFF16"></a-box>
-	    <a-box position="0.45 0.1 0" width="0.2" height="0.1" rotation="90 0 0" color="#0C38E8"></a-box>
-	    <a-box position="-0.45 0.1 0" width="0.2" height="0.1" rotation="90 0 0" color="#FF0000"></a-box> 
+    	<a-obj-model src="#lady-obj" mtl="#lady-mtl"></a-obj-model>
+
+		<a-obj-model src="lady.obj" mtl="crate.mtl"></a-obj-model>
     </a-marker>
 
 
     <a-assets>
     <a-asset-item id="log" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/562d18df/assets/forest_stump/scene.gltf" ></a-asset-item>
+    <a-asset-item id="lady-obj" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/764dc39d/assets/rgw.obj"></a-asset-item>
+    <a-asset-item id="kateS-mtl" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/764dc39d/assets/rgw.mtl"></a-asset-item>
  	</a-assets>
 
     <a-entity camera></a-entity>
