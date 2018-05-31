@@ -12,12 +12,12 @@
       <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' >
          <!-- model retrieved from https://sketchfab.com/models/de1f1066056e478ca7bfc2223a34c6b2# -->
          <a-marker id = "marker" type='pattern' url='https://rawgit.com/Putitontheground/MDDN352Project2/master/assets/pattern-marker.patt'>
-            <a-entity animation-mixer log-cursor-listener gltf-model="#log" scale=".01 .01 .01" position = "0 0 0 " class = "cursor-listener">
-               <a-animation classs = "a-animation" begin="move" easing="ease-in" attribute="position" dur="1500"
+<!--             <a-entity animation-mixer log-cursor-listener gltf-model="#log" scale=".01 .01 .01" position = "0 0 0 " class = "cursor-listener">
+               <a-animation class = "anim-move" begin="move" easing="ease-in" attribute="position" dur="1500"
                   from="0 0 0" to="0 1 0"></a-animation>
-               <a-animation classs = "a-animation" begin="return" easing="ease-in" attribute="position" dur="1500"
+               <a-animation class = "anim-return" begin="return" easing="ease-in" attribute="position" dur="1500"
                   from="0 1 0 " to="0 0 0"></a-animation>
-            </a-entity>
+            </a-entity> -->
          </a-marker>
          <a-assets>
             <a-asset-item id="log" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/562d18df/assets/forest_stump/scene.gltf" ></a-asset-item>
