@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> simple ar.js </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>        
-        <script src="https://jeromeetienne.github.io/AR.js/three.js/build/ar.min.js"></script>
-
-    </head>
-    <body>
-
-        <div id="container"></div>
-
-        <script src="index.js"></script>
-        
-    </body>
+   <head>
+      <script src="https://aframe.io/releases/0.8.0/aframe.js"></script>
+      <script type = "text/javascript" src="js/aframe-ar.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <!-- <script src="https://unpkg.com/aframe-text-component/dist/aframe-text-component.min.js"></script> -->
+      <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.0/dist/aframe-extras.min.js"></script>
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+   </head>
+   <body style='margin : 0px; overflow: hidden;'>
+      <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' >
+         <!-- model retrieved from https://sketchfab.com/models/de1f1066056e478ca7bfc2223a34c6b2# -->
+         <a-marker id = "marker" type='pattern' url='https://rawgit.com/Putitontheground/MDDN352Project2/master/assets/pattern-marker.patt'>
+<!--             <a-entity animation-mixer log-cursor-listener gltf-model="#log" scale=".01 .01 .01" position = "0 0 0 " class = "cursor-listener">
+               <a-animation class = "anim-move" begin="move" easing="ease-in" attribute="position" dur="1500"
+                  from="0 0 0" to="0 1 0"></a-animation>
+               <a-animation class = "anim-return" begin="return" easing="ease-in" attribute="position" dur="1500"
+                  from="0 1 0 " to="0 0 0"></a-animation>
+            </a-entity> -->
+         </a-marker>
+         <a-assets>
+            <a-asset-item id="log" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/562d18df/assets/forest_stump/scene.gltf" ></a-asset-item>
+            <a-asset-item id="lady-obj" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/764dc39d/assets/rgw.obj"></a-asset-item>
+            <a-asset-item id="lady-mtl" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/764dc39d/assets/rgw.mtl"></a-asset-item>
+         </a-assets>
+         <a-entity camera look-controls>
+         <a-entity cursor="fuse: true;"
+            position="0 0 -0.1"
+            geometry="primitive: ring; radiusInner: 0.0004; radiusOuter:0.0006"
+            material="color: white; shader: flat">
+         </a-entity>
+      </a-scene>
+      <a href="#openModal" id="myBtn">Info</a>
+      <div id="openModal" class="modalDialog">
+         <div>
+            <a href="#close" title="Close" id="closebtn" class="close">Close</a>
+            <h2>Here's an example of something that you could show</h2>
+            <p>quite a bit</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nisl diam, porta eget turpis eu, elementum aliquam erat. Nulla diam diam, gravida eu molestie eget, volutpat pellentesque diam. Nunc sed libero ultrices, pellentesque elit eu, pulvinar erat.
+               <br><br> Duis vehicula lacinia ante in consequat. Suspendisse ut blandit nulla. Duis consequat tincidunt nulla, non lobortis dui efficitur a. Nunc congue ullamcorper viverra. In sapien purus, maximus ut ligula tempus, pellentesque porta odio.
+               <br><br>
+               <a href="https://natlib.govt.nz/he-tohu/about/womens-suffrage-petition" id="infolinks">What is this all about?</a>
+               <br><br>
+            </p>
+         </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script type = "text/javascript" src="js/js.js"></script>
+   </body>
 </html>
+
+

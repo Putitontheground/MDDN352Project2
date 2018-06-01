@@ -1,10 +1,8 @@
-## simple-ar.js
+# MDDN352Project2
+Project 2 for MDDN 352 at Victoria University
 
-![Alt text](assets/ar.gif)
+This project allows the use of custom markers and custom models to display a real time AR scene tracked to a point. 
+The inteneded use is for a gallery/library/museum to display information in a fun and interactive way. This project utilises
+ar.js and aframe to make the realtime AR happen. 
 
-### Markers
-![Alt text](https://drive.google.com/uc?export=view&id=0B3XkfYbZArSfeERwQWRNMGR1WDQ)
-![Alt text](https://jeromeetienne.github.io/AR.js/data/images/HIRO.jpg)
-
- - **AR.js** : Efficient Augmented Reality for the Web [https://github.com/jeromeetienne/AR.js](https://github.com/jeromeetienne/AR.js)
- - **AR.js Marker Training** : How To Create your Own Marker? [Click here to start training a marker](https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html)
+This site allows the use of multiple markers and models which can be assigned to whichever the user desires. I recommend hosting all assets on something like rawgit as it usually doesn't like it when hosted locally. 
