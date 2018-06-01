@@ -19,10 +19,23 @@
                   from="0 1 0 " to="0 0 0"></a-animation>
             </a-entity> -->
          </a-marker>
+
+
+         <!--flower marker -->
+
+         <a-marker id ="marker" type='pattern' url='https://cdn.rawgit.com/Putitontheground/MDDN352Project2/AR.js-is-outdated/patterns/flower-marker.patt'>
+         <a-entity animation-mixer gltf-model="#flower" scale=".01 .01 .01"></a-entity>
+         </a-marker>
+         
          <a-assets>
             <a-asset-item id="log" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/562d18df/assets/forest_stump/scene.gltf" ></a-asset-item>
             <a-asset-item id="lady-obj" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/764dc39d/assets/rgw.obj"></a-asset-item>
             <a-asset-item id="lady-mtl" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/764dc39d/assets/rgw.mtl"></a-asset-item>
+
+            <!-- flower -->
+            <a-asset-item id="flower" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/AR.js-is-outdated/assets/flower.gltf" ></a-asset-item>
+
+
          </a-assets>
          <a-entity camera look-controls>
          <a-entity cursor="fuse: true;"
@@ -30,6 +43,9 @@
             geometry="primitive: ring; radiusInner: 0.0004; radiusOuter:0.0006"
             material="color: white; shader: flat">
          </a-entity>
+
+
+
       </a-scene>
       <a href="#openModal" id="myBtn">Info</a>
       <div id="openModal" class="modalDialog">

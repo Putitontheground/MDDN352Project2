@@ -1,0 +1,7 @@
+﻿Eddie Smith - MDDN 352 Project 2
+
+
+Read me for offline use
+
+
+To use in phoenix drive, scan the QR code on your phone and point the camera at one of the markers, either on screen or on a page. If you want to use on a computer you will have to print the markers and hold in front of the webcam
