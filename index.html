@@ -18,6 +18,7 @@
                <a-animation class = "anim-return" begin="return" easing="ease-in" attribute="position" dur="1500"
                   from="0 1 0 " to="0 0 0"></a-animation>
             </a-entity> -->
+            <a-entity animation-mixer gltf-model="#flower" scale=".1 .1 .1"></a-entity>
          </a-marker>
 
 
@@ -25,10 +26,6 @@
 
          <a-marker id ="marker" type='pattern' url='https://cdn.rawgit.com/Putitontheground/MDDN352Project2/AR.js-is-outdated/patterns/flower-marker.patt'>
          <a-entity animation-mixer gltf-model="#flower" scale=".01 .01 .01"></a-entity>
-         </a-marker>
-
-         <a-marker id ="marker" type='pattern' url='https://rawgit.com/Putitontheground/MDDN352Project2/master/assets/pattern-marker.patt'>
-         <a-entity animation-mixer gltf-model="#flower" scale=".1 .1 .1"></a-entity>
          </a-marker>
 
 
@@ -43,6 +40,7 @@
 
 
          </a-assets>
+
          <a-entity camera look-controls>
          <a-entity cursor="fuse: true;"
             position="0 0 -0.1"
