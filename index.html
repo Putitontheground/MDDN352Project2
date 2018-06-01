@@ -10,7 +10,7 @@
    </head>
    <body style='margin : 0px; overflow: hidden;'>
       <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' >
-         
+
          <!-- model retrieved from https://sketchfab.com/models/de1f1066056e478ca7bfc2223a34c6b2# 
          <a-marker id = "marker" type='pattern' url='https://rawgit.com/Putitontheground/MDDN352Project2/master/assets/pattern-marker.patt'>
            <a-entity animation-mixer log-cursor-listener gltf-model="#log" scale=".01 .01 .01" position = "0 0 0 " class = "cursor-listener">
@@ -33,7 +33,7 @@
          <!--Glass marker -->
 
          <a-marker id ="marker" type='pattern' url='https://cdn.rawgit.com/Putitontheground/MDDN352Project2/47b8c6f0/patterns/block-marker.patt'>
-         <a-entity animation-mixer gltf-model="#lady" scale=".2 .2 .2"></a-entity>
+         <a-collada-model animation-mixer src="#glass"></a-collada-model>
          </a-marker>
 
 
@@ -46,7 +46,7 @@
             <!-- flower -->
             <a-asset-item id="flower" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/1d01fef7/assets/flower.gltf" ></a-asset-item>
             <!-- glass -->
-            <a-asset-item id="glass" src="glass.dae"></a-asset-item>
+            <a-asset-item id="glass" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/d5c3c0df/assets/lady.dae"></a-asset-item>
 
 
          </a-assets>
