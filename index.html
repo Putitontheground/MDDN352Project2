@@ -10,58 +10,28 @@
    </head>
    <body style='margin : 0px; overflow: hidden;'>
       <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' >
-
-         <!-- model retrieved from https://sketchfab.com/models/de1f1066056e478ca7bfc2223a34c6b2# 
+         <!-- model retrieved from https://sketchfab.com/models/de1f1066056e478ca7bfc2223a34c6b2# -->
          <a-marker id = "marker" type='pattern' url='https://rawgit.com/Putitontheground/MDDN352Project2/master/assets/pattern-marker.patt'>
-           <a-entity animation-mixer log-cursor-listener gltf-model="#log" scale=".01 .01 .01" position = "0 0 0 " class = "cursor-listener">
+<!--             <a-entity animation-mixer log-cursor-listener gltf-model="#log" scale=".01 .01 .01" position = "0 0 0 " class = "cursor-listener">
                <a-animation class = "anim-move" begin="move" easing="ease-in" attribute="position" dur="1500"
                   from="0 0 0" to="0 1 0"></a-animation>
                <a-animation class = "anim-return" begin="return" easing="ease-in" attribute="position" dur="1500"
                   from="0 1 0 " to="0 0 0"></a-animation>
-            </a-entity> 
-
-            <a-entity animation-mixer gltf-model="#flower" scale=".2 .2 .2"></a-entity>
-            </a-marker> -->
-
-
-         <!--flower marker -->
-
-         <a-marker id ="marker" type='pattern' url='https://rawgit.com/Putitontheground/MDDN352Project2/master/assets/pattern-marker.patt'>
-         <a-entity animation-mixer gltf-model="#flower" scale=".2 .2 .2"></a-entity>
+            </a-entity> -->
          </a-marker>
-
-         <!--Glass marker -->
-
-         <a-marker id ="marker" type='pattern' url='https://cdn.rawgit.com/Putitontheground/MDDN352Project2/47b8c6f0/patterns/block-marker.patt'>
-         <a-collada-model animation-mixer src="#glass" scale="5 5 5"></a-collada-model>
-         </a-marker>
-
-
-         
          <a-assets>
             <a-asset-item id="log" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/562d18df/assets/forest_stump/scene.gltf" ></a-asset-item>
             <a-asset-item id="lady-obj" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/764dc39d/assets/rgw.obj"></a-asset-item>
             <a-asset-item id="lady-mtl" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/764dc39d/assets/rgw.mtl"></a-asset-item>
-
-            <!-- flower -->
-            <a-asset-item id="flower" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/3a9ad205/assets/cammyT.glTF" ></a-asset-item>
-            <!-- glass -->
-            <a-asset-item id="glass" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/d5c3c0df/assets/lady.dae"></a-asset-item>
-
-
          </a-assets>
-
          <a-entity camera look-controls>
          <a-entity cursor="fuse: true;"
             position="0 0 -0.1"
             geometry="primitive: ring; radiusInner: 0.0004; radiusOuter:0.0006"
-            material="color: white; shader: flat">
+            material="color: white; shader: flat"
+            fueseTimeout= "100">
          </a-entity>
-
-
-
       </a-scene>
-
       <a href="#openModal" id="myBtn">Info</a>
       <div id="openModal" class="modalDialog">
          <div>
@@ -81,5 +51,4 @@
       <script type = "text/javascript" src="js/js.js"></script>
    </body>
 </html>
-
 
