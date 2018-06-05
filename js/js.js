@@ -1,18 +1,18 @@
 var extendDeep = AFRAME.utils.extendDeep;
 
 let onload = function() {
-var marker = document.getElementById("marker");
-let boxSize = 0.1;
-let spacing = 0.02;
-for(let x = 1; x<=4;x++){
-    for(let y = 1; y<=4;y++){
-    var name = "box_"+x+"-"+y;
-    regBox(name);
-    let xpos = (x-2)*(boxSize+spacing);
-    let ypos = (y-2)*(boxSize+spacing);
-    marker.appendChild(makeBox(xpos,ypos,boxSize,name));
-}}
-
+// var marker = document.getElementById("marker");
+// let boxSize = 0.1;
+// let spacing = 0.02;
+// for(let x = 1; x<=4;x++){
+//     for(let y = 1; y<=4;y++){
+//     var name = "box_"+x+"-"+y;
+//     regBox(name);
+//     let xpos = (x-2)*(boxSize+spacing);
+//     let ypos = (y-2)*(boxSize+spacing);
+//     marker.appendChild(makeBox(xpos,ypos,boxSize,name));
+// }}
+    regBox();
     // The mesh mixin provides common material properties for creating mesh-based primitives.
     // This makes the material component a default component and maps all the base material properties.
     var meshMixin = AFRAME.primitives.getMeshMixin();
@@ -20,13 +20,13 @@ for(let x = 1; x<=4;x++){
 
 }
 
-var regBox= function(name){
-    AFRAME.registerComponent(name, {
+var regBox= function(){
+    AFRAME.registerComponent("anim-listener", {
         init: function() { 
             this.mouseleaveTimeout = 250; 
             this.isMoused = false;
             this.isMoved = false;
-            this.name = name; 
+            this.name = this.id; 
             this.el.parent = this;
 
 
@@ -115,5 +115,10 @@ var makeBox = function(x,y,siz, name){
 
 }
 
+var addText = function(text){
+    var Tentity = document.createElement("a-entity");
 
-$(document).ready(onload);
+}
+
+
+//$(document).ready(onload);
