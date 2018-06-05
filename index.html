@@ -19,11 +19,41 @@
                   from="0 1 0 " to="0 0 0"></a-animation>
             </a-entity> -->
          </a-marker>
+
+
+         <!--flower marker -->
+
+         <a-marker id ="marker" type='pattern' url='https://cdn.rawgit.com/Putitontheground/MDDN352Project2/64b9ede5/patterns/flower-marker.patt'>
+            <a-box position="-1 0.5 -3" rotation="0 45 0" color="red"></a-box>
+            <a-entity animation-mixer gltf-model="#flower" scale=".2 .2 .2"></a-entity>
+         </a-marker>
+
+         <!--glass marker -->
+
+         <a-marker id ="marker" type='pattern' url='https://cdn.rawgit.com/Putitontheground/MDDN352Project2/64b9ede5/patterns/glass-marker.patt'>
+            <a-box position="-1 0.5 -3" rotation="0 45 0" color="green"></a-box>
+            <a-entity animation-mixer gltf-model="#flower" scale=".2 .2 .2"></a-entity>
+         </a-marker>
+
+         <!--barrow marker -->
+
+         <a-marker id ="marker" type='pattern' url='https://cdn.rawgit.com/Putitontheground/MDDN352Project2/64b9ede5/patterns/barrow-marker.patt'>
+            <a-box position="-1 0.5 -3" rotation="0 45 0" color="grey"></a-box>
+            <a-entity animation-mixer gltf-model="#flower" scale=".2 .2 .2"></a-entity>
+         </a-marker>
+
+         <!--glue marker -->
+
+         <a-marker id ="marker" type='pattern' url='https://cdn.rawgit.com/Putitontheground/MDDN352Project2/64b9ede5/patterns/glue-marker.patt'>
+            <a-box position="-1 0.5 -3" rotation="0 45 0" color="white"></a-box>
+            <a-entity animation-mixer gltf-model="#flower" scale=".2 .2 .2"></a-entity>
+         </a-marker>
+
+
          <a-assets>
-            <a-asset-item id="log" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/562d18df/assets/forest_stump/scene.gltf" ></a-asset-item>
-            <a-asset-item id="lady-obj" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/764dc39d/assets/rgw.obj"></a-asset-item>
-            <a-asset-item id="lady-mtl" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/764dc39d/assets/rgw.mtl"></a-asset-item>
+            <a-asset-item id="flower" src="https://cdn.rawgit.com/Putitontheground/MDDN352Project2/64b9ede5/assets/Flowers/flower.glTF" ></a-asset-item>
          </a-assets>
+
          <a-entity camera look-controls>
          <a-entity cursor="fuse: true;"
             position="0 0 -0.1"
@@ -32,6 +62,8 @@
             fueseTimeout= "100">
          </a-entity>
       </a-scene>
+
+
       <a href="#openModal" id="myBtn">Info</a>
       <div id="openModal" class="modalDialog">
          <div>
@@ -51,4 +83,5 @@
       <script type = "text/javascript" src="js/js.js"></script>
    </body>
 </html>
+
 
