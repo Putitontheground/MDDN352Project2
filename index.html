@@ -12,13 +12,8 @@
    <body style='margin : 0px; overflow: hidden;'>
       <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' >
          <!-- model retrieved from https://sketchfab.com/models/de1f1066056e478ca7bfc2223a34c6b2# -->
-         <a-marker id = "marker" type='pattern' url='patterns/pattern-marker.patt'>
-<!--             <a-entity animation-mixer log-cursor-listener gltf-model="#log" scale=".01 .01 .01" position = "0 0 0 " class = "cursor-listener">
-               <a-animation class = "anim-move" begin="move" easing="ease-in" attribute="position" dur="1500"
-                  from="0 0 0" to="0 1 0"></a-animation>
-               <a-animation class = "anim-return" begin="return" easing="ease-in" attribute="position" dur="1500"
-                  from="0 1 0 " to="0 0 0"></a-animation>
-            </a-entity> -->
+         <a-marker id = "markerboxes" type='pattern' url='patterns/pattern-marker.patt'>
+<!-- js.js will poulate -->
          </a-marker>
 
 
@@ -46,7 +41,7 @@
 
          <a-marker id ="marker" type='pattern' url='patterns/glue-marker.patt'>
             <!--<a-box rotation="0 45 0" color="white"></a-box>-->
-            <a-entity animation-mixer gltf-model="#glue" scale=".1 .1 .1"></a-entity>
+            <a-entity animation-mixer gltf-model="#glue" scale=".5 .5 .5"></a-entity>
          </a-marker>
 
 
@@ -65,7 +60,7 @@
             position="0 0 -0.1"
             geometry="primitive: ring; radiusInner: 0.0004; radiusOuter:0.0006"
             material="color: white; shader: flat"
-            fueseTimeout= "100">
+            fueseTimeout= "50">
          </a-entity>
       </a-scene>
 
