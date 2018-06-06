@@ -12,7 +12,7 @@
    <body style='margin : 0px; overflow: hidden;'>
       <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' >
          <!-- model retrieved from https://sketchfab.com/models/de1f1066056e478ca7bfc2223a34c6b2# -->
-         <a-marker id = "marker" type='pattern' url='https://rawgit.com/Putitontheground/MDDN352Project2/master/assets/pattern-marker.patt'>
+         <a-marker id = "marker" type='pattern' url='patterns/pattern-marker.patt'>
 <!--             <a-entity animation-mixer log-cursor-listener gltf-model="#log" scale=".01 .01 .01" position = "0 0 0 " class = "cursor-listener">
                <a-animation class = "anim-move" begin="move" easing="ease-in" attribute="position" dur="1500"
                   from="0 0 0" to="0 1 0"></a-animation>
@@ -24,39 +24,39 @@
 
          <!--flower marker -->
 
-         <a-marker id ="marker" type='pattern' url='https://cdn.rawgit.com/Putitontheground/MDDN352Project2/64b9ede5/patterns/flower-marker.patt'>
-            <a-box  rotation="0 45 0" color="red"></a-box>
+         <a-marker id ="marker" type='pattern' url='patterns/flower-marker.patt'>
+            <!--<a-box  rotation="0 45 0" color="red"></a-box>-->
             <a-entity animation-mixer gltf-model="#flower" scale="4 4 4" ></a-entity>
          </a-marker>
 
          <!--glass marker -->
 
-         <a-marker id ="marker" type='pattern' url='https://cdn.rawgit.com/Putitontheground/MDDN352Project2/64b9ede5/patterns/glass-marker.patt'>
-            <a-box rotation="0 45 0" color="green"></a-box>
+         <a-marker id ="marker" type='pattern' url='patterns/glass-marker.patt'>
+            <!--<a-box rotation="0 45 0" color="green"></a-box>-->
             <a-entity animation-mixer gltf-model="#glass" scale=".1 .1 .1"></a-entity>
          </a-marker>
 
          <!--barrow marker -->
 
-         <a-marker id ="marker" type='pattern' url='https://rawgit.com/Putitontheground/MDDN352Project2/master/patterns/barrow-marker.patt'>
+         <a-marker id ="marker" type='pattern' url='patterns/barrow-marker.patt'>
             <a-box  rotation="0 45 0" color="grey"></a-box>
          </a-marker>
 
          <!--glue marker -->
 
-         <a-marker id ="marker" type='pattern' url='https://cdn.rawgit.com/Putitontheground/MDDN352Project2/64b9ede5/patterns/glue-marker.patt'>
-            <a-box rotation="0 45 0" color="white"></a-box>
-            <a-entity animation-mixer gltf-model="#glue"></a-entity>
+         <a-marker id ="marker" type='pattern' url='patterns/glue-marker.patt'>
+            <!--<a-box rotation="0 45 0" color="white"></a-box>-->
+            <a-entity animation-mixer gltf-model="#glue" scale=".1 .1 .1"></a-entity>
          </a-marker>
 
 
          <a-assets>
             <!--flower model -->
-            <a-asset-item id="flower" src="https://rawgit.com/Putitontheground/MDDN352Project2/master/gltfs/flower/new.glTF" ></a-asset-item>
+            <a-asset-item id="flower" src="gltfs/flower/new.glTF" ></a-asset-item>
             <!--glass model -->
-            <a-asset-item id="glass" src="https://rawgit.com/Putitontheground/MDDN352Project2/master/gltfs/glass/fff.0002.glTF" ></a-asset-item>
+            <a-asset-item id="glass" src="gltfs/glass/fff.0002.glTF" ></a-asset-item>
             <!--glue model -->
-            <a-asset-item id="glue" src="https://github.com/Putitontheground/MDDN352Project2/blob/master/gltfs/glue/petition.0003.glTF" ></a-asset-item>
+            <a-asset-item id="glue" src="gltfs/glue/petition.0003.glTF" ></a-asset-item>
 
          </a-assets>
 
